@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-16T18:17:14 GMT+03:00" name="Default suite" finished-at="2025-05-16T18:17:19 GMT+03:00" duration-ms="5197">
+    <groups>
+    </groups>
+    <test started-at="2025-05-16T18:17:14 GMT+03:00" name="Default test" finished-at="2025-05-16T18:17:19 GMT+03:00" duration-ms="5197">
+      <class name="DataBaseTesting.DataBaseTesting.DatabaseTesting">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:DataBaseTesting.DataBaseTesting.DatabaseTesting@2c5529ab]" started-at="2025-05-16T18:17:14 GMT+03:00" name="Setup" finished-at="2025-05-16T18:17:18 GMT+03:00" duration-ms="3841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="InsertIntoDatabase()[pri:1, instance:DataBaseTesting.DataBaseTesting.DatabaseTesting@2c5529ab]" started-at="2025-05-16T18:17:18 GMT+03:00" name="InsertIntoDatabase" finished-at="2025-05-16T18:17:18 GMT+03:00" duration-ms="655" status="FAIL">
+          <exception class="java.sql.SQLIntegrityConstraintViolationException">
+            <message>
+              <![CDATA[Duplicate entry '888' for key 'customers.PRIMARY']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '888' for key 'customers.PRIMARY'
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1500)
+at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2322)
+at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1370)
+at DataBaseTesting.DataBaseTesting.DatabaseTesting.InsertIntoDatabase(DatabaseTesting.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLIntegrityConstraintViolationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InsertIntoDatabase -->
+        <test-method signature="UpdateIntoDatabase()[pri:2, instance:DataBaseTesting.DataBaseTesting.DatabaseTesting@2c5529ab]" started-at="2025-05-16T18:17:18 GMT+03:00" name="UpdateIntoDatabase" finished-at="2025-05-16T18:17:18 GMT+03:00" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateIntoDatabase -->
+        <test-method signature="ReadFromDatabase()[pri:3, instance:DataBaseTesting.DataBaseTesting.DatabaseTesting@2c5529ab]" started-at="2025-05-16T18:17:18 GMT+03:00" name="ReadFromDatabase" finished-at="2025-05-16T18:17:19 GMT+03:00" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadFromDatabase -->
+        <test-method signature="DeleteFromDatabase()[pri:4, instance:DataBaseTesting.DataBaseTesting.DatabaseTesting@2c5529ab]" started-at="2025-05-16T18:17:19 GMT+03:00" name="DeleteFromDatabase" finished-at="2025-05-16T18:17:19 GMT+03:00" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteFromDatabase -->
+      </class> <!-- DataBaseTesting.DataBaseTesting.DatabaseTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
