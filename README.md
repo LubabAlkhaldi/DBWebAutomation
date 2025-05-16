@@ -1,45 +1,49 @@
-# Database Testing with Selenium and MySQL 🗄️🌐
+# 🗄️🌐 Database Testing with Selenium and MySQL
 
-This project demonstrates how to perform basic database operations (Insert, Update, Read) on a MySQL database and use Selenium WebDriver to interact with a web page, filling form fields with data fetched from the database 🧑‍💻📝.
+This project demonstrates how to perform basic database operations using Java and JDBC, and how to use Selenium WebDriver to interact with a web form by filling it with data retrieved from a MySQL database. 🧑‍💻📝
 
-## Project Overview 🚀
+---
 
-- Connects to a MySQL database (`classicmodels`) using JDBC.
-- Performs Insert, Update, and Select queries on the `customers` table.
-- Uses Selenium WebDriver (ChromeDriver) to open a registration page and automatically fill form fields with data retrieved from the database.
-- TestNG is used for structuring the tests with priorities.
+## 🚀 Project Overview
 
-## Features ✨
+- 🔌 Connects to a MySQL database (`classicmodels`) using JDBC  
+- 📥 Performs SQL operations: `INSERT`, `UPDATE`, and `SELECT` on the `customers` table  
+- 🌐 Uses Selenium WebDriver (ChromeDriver) to open a registration page and auto-fill form fields  
+- 🧪 Structures the test cases using **TestNG** with defined priorities
 
-- Insert a new customer record into the database 🆕
-- Update the customer's credit limit 💳
-- Read the customer's details and use them to fill an online registration form 📝
+---
 
-## Technologies Used 🛠️
+## ✨ Features
 
-- Java ☕
-- MySQL 🐬
-- Selenium WebDriver (ChromeDriver) 🌐
-- TestNG ✅
+- 🆕 Insert a new customer record into the database  
+- 📝 Read customer data and use it to fill an online registration form
 
-## Prerequisites 📋
+---
 
-- Java JDK installed
-- MySQL Server running with the `classicmodels` database available
-- Chrome browser installed
-- ChromeDriver executable compatible with your Chrome version
-- TestNG library added to the project dependencies
+## 🛠️ Technologies Used
 
-## Setup Instructions ⚙️
+- **Java** ☕  
+- **MySQL** 🐬  
+- **Selenium WebDriver (ChromeDriver)** 🌐  
+- **TestNG** ✅  
+- **JDBC** 📦
 
-1. Clone this repository.
-2. Update the MySQL connection URL, username, and password in the `DatabaseTesting` class if necessary.
-3. Make sure the MySQL server is running and accessible.
-4. Ensure that ChromeDriver is set up properly.
-5. Run the tests using TestNG from your IDE or command line.
+---
 
-## Notes 📝
+## 📋 Prerequisites
 
-- The database table `customers` should exist in the `classicmodels` database with appropriate columns.
-- The web page URL `https://smartbuy-me.com/account/register` is used to test form filling.
-- The submit button click is commented out to avoid actual registration during tests. You can uncomment if needed.
+Before you begin, make sure you have the following installed and set up:
+
+- Java JDK  
+- MySQL Server with the `classicmodels` database  
+- Google Chrome browser  
+- ChromeDriver executable (version matching your Chrome browser)  
+- TestNG library added to your project dependencies
+
+---
+
+## 📝 Notes
+
+- Ensure the `customers` table exists in your `classicmodels` database with the expected columns  
+- The target form URL: [https://smartbuy-me.com/account/register](https://smartbuy-me.com/account/register)  
+- The submit button action is **commented out** to prevent actual account creation — you can uncomment it if needed for live testing
